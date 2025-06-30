@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get "home/index" => "home#index"
   get "home/getQueryStringValues" => "home#getQueryStringValues"
   get "home/passDataToViews" => "home#passDataToViews"
+  get "home/showDateTimeInfo" => "home#showDateTimeInfo"
 end
