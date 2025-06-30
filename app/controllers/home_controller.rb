@@ -131,4 +131,12 @@ class HomeController < ApplicationController
       }
     )
   end
+
+  def loggingTutorial
+    Rails.logger.debug("DEBUG: The debug level should be used for detailed messages that assist in debug.")
+    Rails.logger.info("INFO: The info level provides information regarding normal application proceesses.")
+    Rails.logger.warn("WARN: Warnings indicate something is wrong. It might be an error.")
+    Rails.logger.error("ERROR: Information describing a major problem that has occurred.")
+    Rails.logger.fatal("FATAL: Fatal logs should only be used when something crashes the application.")
+  end
 end
