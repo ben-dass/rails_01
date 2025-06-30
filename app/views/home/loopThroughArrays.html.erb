@@ -1,5 +1,9 @@
 <h1>Products</h1>
 
+<%# <%= debug @Products %>
+<%# <%= @Products.inspect %>
+
+
 <table class="table">
     <thead>
         <tr>
@@ -13,6 +17,7 @@
     </thead>
     <tbody>
         <% @Products.each do | product | %>
+        <%# <%= debug product %>
             <tr>
                 <td><%= product[:productID] %></td>
                 <td><%= product[:productName] %></td>

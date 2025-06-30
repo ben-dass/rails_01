@@ -60,6 +60,9 @@ class HomeController < ApplicationController
   def loopThroughArrays
     @Products = []
 
+    # console
+    # debugger
+
     @Products.push(
       {
         "productID": 0,
@@ -92,6 +95,8 @@ class HomeController < ApplicationController
         "cost": 3000
       }
     )
+
+    # debugger
 
     @Products.push(
       {
