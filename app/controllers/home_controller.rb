@@ -32,4 +32,13 @@ class HomeController < ApplicationController
 
     render html: message.html_safe
   end
+
+  def passDataToViews
+    @message = "<h1>Hello World from Rails 8!</h1>"
+    @message += "<h2>Hello World from Rails 8!</h2>"
+    @message += "<h3>Hello World from Rails 8!</h3>"
+    @message += "<h4>Hello World from Rails 8!</h4>"
+    @message += "<h5>Hello World from Rails 8!</h5>"
+    @message += "<h6>Hello World from Rails 8!</h6>"
+  end
 end
