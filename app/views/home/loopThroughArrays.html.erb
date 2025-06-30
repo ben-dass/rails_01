@@ -1,0 +1,34 @@
+<h1>Products</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Product ID</td>
+            <td>Product Name</td>
+            <td>Quantity</td>
+            <td>Units in Stock</td>
+            <td>Discontinued</td>
+            <td>Cost</td>
+        </tr>
+    </thead>
+    <tbody>
+        <% @Products.each do | product | %>
+            <tr>
+                <td><%= product[:productID] %></td>
+                <td><%= product[:productName] %></td>
+                <td><%= product[:quantity] %></td>
+                <td><%= product[:unitsInStock] %></td>
+                <td><%= product[:discontinued] %></td>
+                <td><%= product[:cost] %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+
+<ul>
+    <% @Products.each do | product | %>
+        <li><%= product[:productName] %></li>
+    <% end %>
+</ul>
+ 

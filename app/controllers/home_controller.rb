@@ -56,4 +56,74 @@ class HomeController < ApplicationController
       "stateCode": nil
     }
   end
+
+  def loopThroughArrays
+    @Products = []
+
+    @Products.push(
+      {
+        "productID": 0,
+        "productName": "AMD Ryzen 3990",
+        "quantity": 100,
+        "unitsInStock": 50,
+        "discontinued": "True",
+        "cost": 3000
+      }
+    )
+
+    @Products.push(
+      {
+        "productID": 1,
+        "productName": "AMD Ryzen 3980",
+        "quantity": 100,
+        "unitsInStock": 50,
+        "discontinued": "True",
+        "cost": 3000
+      }
+    )
+
+    @Products.push(
+      {
+        "productID": 2,
+        "productName": "AMD Ryzen 3970",
+        "quantity": 100,
+        "unitsInStock": 50,
+        "discontinued": "True",
+        "cost": 3000
+      }
+    )
+
+    @Products.push(
+      {
+        "productID": 3,
+        "productName": "AMD Ryzen 3960",
+        "quantity": 100,
+        "unitsInStock": 50,
+        "discontinued": "True",
+        "cost": 3000
+      }
+    )
+
+    @Products.push(
+      {
+        "productID": 4,
+        "productName": "AMD Ryzen 3950",
+        "quantity": 100,
+        "unitsInStock": 50,
+        "discontinued": "True",
+        "cost": 3000
+      }
+    )
+
+    @Products.push(
+      {
+        "productID": 5,
+        "productName": "AMD Ryzen 3940",
+        "quantity": 100,
+        "unitsInStock": 50,
+        "discontinued": "True",
+        "cost": 3000
+      }
+    )
+  end
 end
