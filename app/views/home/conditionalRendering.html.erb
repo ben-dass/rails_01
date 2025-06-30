@@ -16,3 +16,64 @@
         <td><%= @data[:stateCode] %></td>
     </tr>
 </table>
+
+<% if @data[:loggedIn] %>
+    <h4>Hi, <%= @data[:name] %>! </h4>
+<% else %>
+    <h4>Currently in Guest mode. Please login. </h4>
+<% end %>
+
+
+<% if @data[:loggedIn] === true %>
+    <p>You are logged in currently. </p>
+<% else %>
+    <p>Guest Mode.</p>
+<% end %>
+
+
+<% if @data[:name] == "Jimmy Anderson" %>
+    <p>Jimmy Anderson: Name credential checking passed.</p>
+<% else %>
+    <p>Jimmy Anderson: Name credential checking failed. </p>
+<% end %>
+
+
+<% if @data[:name] != "Jimmy Anderson" %>
+    <p>James Anderson: Name credential checking passed.</p>
+<% else %>
+    <p>James Anderson: Name credential checking failed. </p>
+<% end %>
+
+
+<% if @data[:countryCode] == "US" %>
+    <p>Currency: USD</p>
+<% elsif @data[:countryCode] == "UK" %>
+    <p>Currency: GBP</p>
+<% elsif @data[:countryCode] == "IND" %>
+    <p>Currency: INR</p>
+<% elsif @data[:countryCode] == "AUS" %>
+    <p>Currency: AUD</p>
+<% else %>
+    <p>Invalid Country Code.</p>
+<% end %>
+
+
+<% if @data[:workExperience] > 30 and @data[:workExperience] < 40 %>
+    <p>Eligible for CEO position.</p>
+<% else %>
+    <p>CEO requirement not fulfilled.</p>
+<% end %>
+
+
+<% if @data[:countryCode] == "IND" or @data[:countryCode] == "US" %>
+    <p>Job market trend: Positive</p>
+<% else %>
+    <p>Job market trend: Undetermined</p>
+<% end %>
+
+
+<% if @data[:stateCode] == nil %>
+    <p>State code not provided.</p>
+<% else %>
+    <p><% @data[:stateCode] %></p>
+<% end %>
